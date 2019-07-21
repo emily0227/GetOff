@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+    android:id="@+id/bustitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="0dp"
+    android:layout_marginBottom="0dp"
+    android:background="#FFCC00"
+    android:text="                                     BUS"
+    android:textSize="20dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    />
+
+    <Button
+        android:layout_width="215dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/subway"
+        android:text="Subway"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:layout_width="215dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/subway"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/bus"
+        android:text="Bus"
+        android:textSize="20sp"
+        />
+
+    <SearchView
+        android:id="@+id/bus_search"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="100dp"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+    <TextView
+        android:id="@+id/bus_usual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#FFCC00"
+        android:text="                                즐겨찾기List"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bus_search"
+        />
+
+</android.support.constraint.ConstraintLayout>

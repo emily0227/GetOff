@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/subwaytitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="#FFCC00"
+        android:text="                               SUBWAY"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Button
+        android:layout_width="215dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/subway"
+        android:text="Subway"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:layout_width="215dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/subway"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/bus"
+        android:text="Bus"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@id/bus"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/startalarm"
+        android:text="Alarm"
+        android:textSize="20dp"
+        android:background="#FFCC00"
+        />
+
+    <TextView
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="0dp"
+        android:background="#FF9900"
+        android:text="출발"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subwaytitle"
+        />
+
+    <TextView
+        android:id="@+id/transfer"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="0dp"
+        android:background="#FF9900"
+        android:text="환승"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/start"
+        />
+
+    <TextView
+        android:id="@+id/arrive"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="0dp"
+        android:background="#FF9900"
+        android:text="도착"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/transfer"
+        />
+
+
+
+</android.support.constraint.ConstraintLayout>
