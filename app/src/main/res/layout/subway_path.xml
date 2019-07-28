@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFCC">
 
     <TextView
         android:id="@+id/subwaytitle"
@@ -12,8 +13,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:background="#FFCC00"
-        android:text="                               SUBWAY"
+        android:background="#FF6A89"
+        android:text="SUBWAY"
+        android:gravity="center"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,7 +53,7 @@
         android:id="@+id/startalarm"
         android:text="Alarm"
         android:textSize="20dp"
-        android:background="#FFCC00"
+        android:background="@drawable/btn"
         />
 
     <TextView
@@ -61,7 +63,7 @@
         android:layout_marginTop="80dp"
         android:layout_marginLeft="50dp"
         android:layout_marginBottom="0dp"
-        android:background="#FF9900"
+        android:background="@drawable/box"
         android:text="출발"
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,7 +77,7 @@
         android:layout_marginTop="100dp"
         android:layout_marginLeft="50dp"
         android:layout_marginBottom="0dp"
-        android:background="#FF9900"
+        android:background="@drawable/box"
         android:text="환승"
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -89,7 +91,7 @@
         android:layout_marginTop="100dp"
         android:layout_marginLeft="50dp"
         android:layout_marginBottom="0dp"
-        android:background="#FF9900"
+        android:background="@drawable/box"
         android:text="도착"
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"

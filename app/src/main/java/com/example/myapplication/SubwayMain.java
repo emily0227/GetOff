@@ -19,7 +19,7 @@ public class SubwayMain extends AppCompatActivity {
         setSupportActionBar(myToolbar);
 
         getSupportActionBar().setTitle("Get Off");
-        /* MyClick myclick = new MyClick(); */
+
 
 
         findViewById(R.id.bus).setOnClickListener(new View.OnClickListener() {
@@ -37,14 +37,7 @@ public class SubwayMain extends AppCompatActivity {
         });*/
     }
 
-    private class DefaultInput {
-    }
-    /* class MyClick implements View.OnClickListener {
 
-        @Override
-        public void onClick(View v) {
 
-        }
-    }*/
 
 }
