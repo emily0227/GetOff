@@ -1,9 +1,18 @@
 package com.example.myapplication;
 
+import android.graphics.Matrix;
+import android.graphics.PointF;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Toast;
+
+import com.caverock.androidsvg.SVGImageView;
 
 public class SubwayMain extends AppCompatActivity {
 
@@ -18,26 +27,16 @@ public class SubwayMain extends AppCompatActivity {
         myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
 
-        getSupportActionBar().setTitle("Get Off");
+        getSupportActionBar().setTitle("GOS");
 
+        setContentFragment(new MainFragment());
 
-
-        findViewById(R.id.bus).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setContentView(R.layout.bus_main);
-            }
-        });
-
-    /*    findViewById(R.id.subway).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setContentView(R.layout.subway_main);
-            }
-        });*/
     }
-
-
-
+    private void setContentFragment(Fragment fragment)
+    {
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.content_frame, fragment);
+        ft.commit();
+    }
 
 }
